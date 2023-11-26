@@ -1,0 +1,5 @@
+streamlit==1.28.1
+pandas==2.1.2
+geopandas==0.14.1
+matplotlib==3.8.2
+st-clickable-images==0.0.3
