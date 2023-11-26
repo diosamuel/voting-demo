@@ -15,7 +15,7 @@ st.sidebar.title("Pemilihan Umum")
 st.sidebar.write("Pemilu adalah singkatan dari Pemilihan Umum, yang merupakan suatu proses dimana warga negara suatu negara memberikan suara mereka untuk memilih para wakil mereka dalam pemerintahan. Pemilu merupakan salah satu prinsip dasar demokrasi yang memungkinkan rakyat untuk berpartisipasi dalam menentukan pemimpin dan kebijakan negara.")
 class RegistrasiVoting:
 	def __init__(self):
-		self.Indonesia = Maps()
+		self.ProvinsiIndonesia = ['Aceh', 'Sumatera Barat', 'Yogyakarta', 'Sumatera Utara', 'Bangka-Belitung', 'Papua Barat', 'Jawa Timur', 'Kalimantan Barat', 'Kalimantan Selatan', 'Kalimantan Timur', 'Kepulauan Riau', 'Lampung', 'Maluku', 'Maluku Utara', 'Nusa Tenggara Barat', 'Nusa Tenggara Timur', 'Papua', 'Riau', 'Sulawesi Selatan', 'Bengkulu', 'Sulawesi Tengah', 'Sulawesi Utara', 'Sulawesi Tenggara', 'Bali', 'Banten', 'Gorontalo', 'Jakarta Raya', 'Jambi', 'Jawa Barat', 'Jawa Tengah', 'Kalimantan Tengah', 'Sulawesi Barat', 'Sumatera Selatan', 'Kalimantan Utara']
 		if 'pemilih' not in st.session_state:
 			st.session_state.isVerif = False
 			st.session_state.kamera = None
@@ -79,7 +79,7 @@ class RegistrasiVoting:
 			"nama":self.temp_con["nama"].text_input('Nama Lengkap'),
 			"nik":self.temp_con["nik"].text_input('NIK'),
 			"gender":self.temp_con["gender"].selectbox("Jenis kelamin",["Laki-Laki","Perempuan"]),
-			"provinsi":self.temp_con["provinsi"].selectbox("Pilih Provinsi",self.Indonesia.getState()),
+			"provinsi":self.temp_con["provinsi"].selectbox("Pilih Provinsi",self.ProvinsiIndonesia),
 			"camera":self.temp_con["camera"].camera_input("Verifikasi Wajah"),
 			"tombol":self.temp_con["tombol"].button("Verifikasi",use_container_width=True,type="primary")
 		}

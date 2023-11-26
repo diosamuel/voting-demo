@@ -4,7 +4,7 @@ import geopandas as gpd
 class Maps():
 	def __init__(self):
 		self.geofile = "C:\\Users\\Admin\\Desktop\\program\\Pythonist\\tubes-alpro-politik\\pages\\indonesia.geojson"
-		self.gdf = gpd.read_file(self.geofile)
+		# self.gdf = gpd.read_file(self.geofile)
 
 	# def showMap(self):
 	# 	m = folium.Map(location=[self.gdf.centroid.y.mean(), self.gdf.centroid.x.mean()], zoom_start=5)
@@ -14,5 +14,5 @@ class Maps():
 	# 	).add_to(m)
 	# 	folium_static(m)
 
-	def getState(self):
-		return self.gdf["state"].to_numpy().flatten()
+	# def getState(self):
+	# 	return self.gdf["state"].to_numpy().flatten()
