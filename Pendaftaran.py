@@ -3,7 +3,6 @@ import pandas as pd
 import time
 from datetime import datetime
 from alat.db import Database
-from alat.maps import Maps
 
 st.set_page_config(
     page_title="PEMILU",
