@@ -3,3 +3,4 @@ pandas==2.1.2
 geopandas==0.14.1
 matplotlib==3.8.2
 st-clickable-images==0.0.3
+opencv-python==4.8.1.78
