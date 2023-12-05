@@ -134,7 +134,7 @@ class RegistrasiVoting:
 					self.hapusContainer()
 					self.tampilBiodata()
 				else:
-					st.warning("Wajah kurang jelas, silahkan foto ulang")
+					st.warning("Wajah tidak terdeteksi, silakan foto ulang")
 
 
 def detect_faces(image):
