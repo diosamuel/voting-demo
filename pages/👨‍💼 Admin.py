@@ -44,7 +44,8 @@ else:
 	col1,col2 = st.columns(2)
 	fig, ax = plt.subplots()
 	provinsiCounts = df["provinsi"].value_counts()
-	ax.bar(provinsiCounts.index,provinsiCounts)
+	ax.pie(provinsiCounts, labels=provinsiCounts.index, autopct='%1.1f%%', startangle=90)
+	# ax.bar(provinsiCounts.index,provinsiCounts)
 	ax.set_title('Data Provinsi')
 	col1.pyplot(fig)
 	
